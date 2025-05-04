@@ -1,0 +1,9 @@
+services:
+  bizeps-entertainment:
+    image: bizeps-entertainment
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bizeps-entertainment-1
+    ports:
+      - "8080:80"

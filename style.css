@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #00ff88;
+  font-family: 'Courier New', monospace;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+main {
+  text-align: center;
+  padding: 2rem;
+  max-width: 90%;
+}
+
+.message {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.message.visible {
+  opacity: 1;
+}
+
+.final-message {
+  font-size: 1.4rem;
+  color: #ccc;
+  margin-top: 2rem;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.message.fade-out {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+#app {
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
