@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     container_name: bizeps-entertainment-1
     ports:
-      - "8080:80"
+      - "9090:80"
