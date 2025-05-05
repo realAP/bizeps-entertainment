@@ -5,8 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: bizeps-entertainment-1
-    ports:
-      - "9090:80"
     healthcheck:
       test: [
         "CMD-SHELL",
